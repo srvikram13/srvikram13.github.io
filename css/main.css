@@ -175,11 +175,11 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-size: 20px 20px;
 
 
-  background: url('/img/white_pattern.png'), -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, rgba(230, 69, 90, 0.9)), color-stop(33.33333%, rgba(255, 182, 122, 0.9)), color-stop(66.66667%, rgba(93, 223, 200, 0.9)), color-stop(100%, rgba(51, 204, 255, 0.9))), url('/img/grainy_bg.png');
-  background: url('/img/white_pattern.png'), -webkit-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/grainy_bg.png');
-  background: url('/img/white_pattern.png'), -moz-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/grainy_bg.png');
-  background: url('/img/white_pattern.png'), -o-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/grainy_bg.png');
-  background: url('/img/white_pattern.png'), linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/grainy_bg.png');
+  background: url('/img/white_pattern.png'), -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, rgba(230, 69, 90, 0.9)), color-stop(33.33333%, rgba(255, 182, 122, 0.9)), color-stop(66.66667%, rgba(93, 223, 200, 0.9)), color-stop(100%, rgba(51, 204, 255, 0.9))), url('/img/white_pattern.png');
+  background: url('/img/white_pattern.png'), -webkit-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/white_pattern.png');
+  background: url('/img/white_pattern.png'), -moz-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/white_pattern.png');
+  background: url('/img/white_pattern.png'), -o-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/white_pattern.png');
+  background: url('/img/white_pattern.png'), linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/white_pattern.png');
 
 
 }
@@ -516,6 +516,19 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-color: #808080;
 }
 
+
+.label-primary {
+  color: #FFF;
+  background-color: #428BCA;
+  border-color: #357EBD;
+}
+.label-primary[href]:hover,
+.label-primary[href]:focus {
+  color: #FFF;
+  background-color: #3276B1;
+  border-color: #285E8E;
+}
+
 .label-danger {
   background-color: #d9534f;
 }
@@ -572,7 +585,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   content: "";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background-image: 
+  /*background-image: 
   -webkit-gradient(linear, 0 0, 100% 100%, 
     color-stop(.25, rgba(255, 255, 255, .2)), 
     color-stop(.25, transparent), color-stop(.5, transparent), 
@@ -592,9 +605,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
     transparent
     );
   z-index: 1;
-  -webkit-background-size: 50px 50px;
+  -webkit-background-size: 50px 50px;*/
   -moz-background-size: 50px 50px;
-  -webkit-animation: move 2s linear infinite;
+  /*-webkit-animation: move 2s linear infinite;*/
   -webkit-border-top-right-radius: 8px;
   -webkit-border-bottom-right-radius: 8px;
   -moz-border-radius-topright: 8px;
@@ -639,7 +652,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-color: #f1c40f;
 }
 .midnight > span{
-  background-color: #2c3e50;
+  background-color: #2F4F4F;
 }
 .pomengrate > span{
   background-color: #c0392b;
@@ -675,6 +688,7 @@ footer p{
   margin-bottom: 0px;
   font-size:0.8em;
   color: #506070;
+  font-weight: normal;
 }
 
 /* media Queries

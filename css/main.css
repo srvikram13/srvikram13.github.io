@@ -324,6 +324,16 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   font-size: 14px;
 
 } 
+.objective {
+  padding-top: 20px;
+  border-top: 1px solid #CCC
+}
+.objective p {
+  padding: 0px 30px;
+  font-style: italic;
+  font-size: 1.2em;
+  font-family: 'Noto Serif', serif;
+}
 /* Contact-info */
 .contact-info{
 

@@ -174,14 +174,17 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-repeat: repeat;
   background-size: 20px 20px;
 
-
+  /*
   background: url('/img/white_pattern.png'), -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, rgba(230, 69, 90, 0.9)), color-stop(33.33333%, rgba(255, 182, 122, 0.9)), color-stop(66.66667%, rgba(93, 223, 200, 0.9)), color-stop(100%, rgba(51, 204, 255, 0.9))), url('/img/white_pattern.png');
   background: url('/img/white_pattern.png'), -webkit-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/white_pattern.png');
   background: url('/img/white_pattern.png'), -moz-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/white_pattern.png');
   background: url('/img/white_pattern.png'), -o-linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/white_pattern.png');
   background: url('/img/white_pattern.png'), linear-gradient(top left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)), url('/img/white_pattern.png');
-
-
+  */
+  background: url('http://srvikram13.github.io/img/white_pattern.png'), -webkit-linear-gradient(left, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)); /* For Safari */
+  background: url('http://srvikram13.github.io/img/white_pattern.png'), -o-linear-gradient(right, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)); /* For Opera 11.1 to 12.0 */
+  background: url('http://srvikram13.github.io/img/white_pattern.png'), -moz-linear-gradient(right, rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)); /* For Firefox 3.6 to 15 */
+  background: url('http://srvikram13.github.io/img/white_pattern.png'), linear-gradient(to right,  rgba(230, 69, 90, 0.9), rgba(255, 182, 122, 0.9), rgba(93, 223, 200, 0.9), rgba(51, 204, 255, 0.9)); /* Standard syntax (must be last) */
 }
 
 /* Header */
@@ -316,7 +319,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   padding: 0;
 }
 .main-links ul li{
-  border-bottom: 1px solid #F1F1F1;
+  /*border-bottom: 1px solid #F1F1F1;*/
   padding: 10px 0;
 }
 .main-links ul li a{
@@ -353,7 +356,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 
 .item-box{
   padding: 6px 6px 6px 10px;
-  border: 1px solid #f1f1f1;
+  /*border: 1px solid #f1f1f1;*/
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -686,7 +689,7 @@ footer{
 }
 footer p{
   margin-bottom: 0px;
-  font-size:0.8em;
+  font-size:0.75em;
   color: #506070;
   font-weight: normal;
 }
@@ -733,7 +736,7 @@ Change widths as necessary
   /* Sidebar */
   .sidebar{
    padding-left: 20px;
-   border-left: 1px solid #f1f1f1;
+   /*border-left: 1px solid #f1f1f1;*/
  }
  /* COLUMN GRID */
  .g1,.g2,.g3 {display:inline; float: left}

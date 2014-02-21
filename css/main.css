@@ -388,6 +388,9 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   border-bottom: 1px solid teal;
   margin-bottom: 2em;
 }
+.work:last-child li:last-child {
+  border-bottom: none;
+}
 .work li span{
   float: right;
 }

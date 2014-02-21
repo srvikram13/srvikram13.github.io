@@ -385,7 +385,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 
 /* WorkExperience */
 .work li{
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid teal;
   margin-bottom: 2em;
 }
 .work li span{
@@ -563,7 +563,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 .meter { 
   height: 24px;  /* Can be anything */
   position: relative;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #ccc;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;

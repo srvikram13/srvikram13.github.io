@@ -36,7 +36,7 @@ function decrypt_string(crypted_string,n,decryption_key,just_email_address) {
 	return decrypted_string;
 }
 
-function decrypt_and_email(crypted_string,n,decryption_key) {
+function decryptAndEmail(crypted_string,n,decryption_key) {
 	if(!n || !decryption_key) { n = 0; decryption_key = 0; }
 	if(!crypted_string) crypted_string = 0;
 

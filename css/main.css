@@ -22,10 +22,10 @@ p, blockquote, q, pre, address, hr, code, samp, dl, ol, ul, form, table, fieldse
 /* TYPOGRAPHY */
 /* Composed to a scale of 12px, 14px, 16px, 18px, 21px, 24px, 36px, 48px, 60px and 72px */
 h1, h2, h3, h4, h5, h6 {font-family:'Open Sans', sans-serif;color:#444;}
-h1 {margin: 0; font-size: 3.75em; line-height: 1.2em; margin-bottom: 0.4em} /* 60px / 72px */
-h2 {margin: 0; font-size: 3em; line-height: 1em; margin-bottom: 0.5em} /* 48px / 48px */
+/*h1 {margin: 0; font-size: 3.75em; line-height: 1.2em; margin-bottom: 0.4em}*/ /* 60px / 72px */
+h1 {margin: 0; font-size: 3em; line-height: 1em; margin-bottom: 0.5em} /* 48px / 48px */
 h3 {margin: 0; font-size: 2.25em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 0.6667em} /* 36px / 48px */ 
-h4 {margin: 0; font-size: 1.5em; line-height: 1em; margin-bottom: 1em} /* 24px / 24px */
+h2,h4 {margin: 0; font-size: 1.5em; line-height: 1em; margin-bottom: 1em} /* 24px / 24px */
 h5 {margin: 0; font-size: 1.3125em; line-height: 1.1428571428571428571428571428571em; margin-bottom: 1.1428571428571428571428571428571em} /* 21px / 24px */
 h6 {margin: 0; font-size: 1.125em; line-height: 1.3333333333333333333333333333333em; margin-bottom: 1.3333333333333333333333333333333em} /* 18px / 24px */
 p, ul, blockquote, pre, td, th, label {margin: 0; font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em} /* 16px / 24px */
@@ -196,7 +196,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 
   display: none;
 }
-#header h4{
+#header h2{
   margin-bottom:0px; 
 }
 #header .visible{
@@ -291,21 +291,21 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
 .info{
 
 }
-.info h2, #header h2 {
+.info h1, #header h1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: .3em;
 }
-#header h2 {
+#header h1 {
   color: darkslategray;
   text-shadow: 1px 1px 2px #999;
   font-family: 'Russo One', sans-serif;
 }
-.info h4 {
+.info h2 {
   color: #999;
   letter-spacing: -1px;
 }
-#header h4{
+#header h2{
   color: #333;
   text-shadow: 1px 1px 2px #999;
 }
@@ -696,7 +696,9 @@ footer p{
   color: #506070;
   font-weight: normal;
 }
-
+.no-list.work h5 small {
+  color:#888;
+}
 /* media Queries
 
 FOLDING FLUID GRID
@@ -800,6 +802,6 @@ Change widths as necessary
   tr, img {page-break-inside: avoid; }
   img {max-width: 100% !important; }
   @page {margin: 0.5cm}
-  p, h2, h3 {orphans: 3; widows: 3}
-  h2, h3{page-break-after: avoid}
+  p, h1, h3 {orphans: 3; widows: 3}
+  h1, h3{page-break-after: avoid}
 }

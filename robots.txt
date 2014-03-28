@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://srvikram13.github.io/sitemap.xml

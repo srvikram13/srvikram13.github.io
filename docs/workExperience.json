@@ -1,0 +1,6 @@
+[{"start":"07-2007", "end":"07-2009", "co": "Zeus Learning/ TestFunda", "url": "http://www.testfunda.com", "designation": "Senior Programmer", "desc":"Some text here"},
+ {"start":"07-2009", "end":"07-2011", "co": "Geodesic Limited", "url": "http://www.geodesic.com/", "designation": "Senior Software Engineer", "desc":"Some text here"},
+ {"start":"07-2011", "end":"01-2012", "co": "Zeus Learning/ TestFunda", "url": "http://www.testfunda.com", "designation": "IT Analyst", "desc":"Some text here"},
+ {"start":"01-2012", "end":"08-2012", "co": "Zeus Learning/ TestFunda", "url": "http://www.testfunda.com", "designation": "IT Analyst", "desc":"Some text here"},
+ {"start":"09-2012", "end":"04-2014", "co": "ZyFin Research", "url": "http://www.zyfin.com/research", "designation": "UI Engineer", "desc":"Some text here"}
+ ]

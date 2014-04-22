@@ -9,7 +9,7 @@ bookedSeats["silver"] = ["1x1", "1x2","1x3","2x1", "1x2","1x3"];
 bookedSeats["bronze"] = ["1x1", "1x2","1x3"];
 
 
-var maxSeats = 10;	//	max number of seats allowed for booking during one session
+var maxSeats = 8;	//	max number of seats allowed for booking during one session
 
 var category = '';  //   GOLD, SILVER, BRONZE
 var nSeats = 0;     //   seats the user wishes to book during this session

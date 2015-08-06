@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Numerology </title>
+		<meta charset="utf-8">
+        
+    <meta name="keywords" content="Numerology Application">
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+		
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <!-- Le fav and touch icons 
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ticket-logo-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ticket-logo-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ticket-logo-72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ticket-logo-72.png">-->
+
+    
+    <link rel="shortcut icon" href="img/V-icon.png">
+    <style type="text/css">
+      body {
+        font-family: Tahoma, serif;
+        text-align: center;
+        color:#333;
+      }
+      header {
+        font-family: 'Droid Serif', serif;
+      }
+      #container {
+        max-width: 400px;
+        min-width: 310px;
+        -ms-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        box-sizing:border-box;
+        padding: 10px;
+        margin: 0px auto;
+        max-height: 600px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        text-align: left;
+      }
+      select, input {
+        max-width: 120px;
+        width: 100%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      label {
+        width: 140px;
+        text-align: right;
+        display: inline-block;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+		<script src="TicketBooking/scripts/jquery.min.js"></script>
+		<script src="TicketBooking/scripts/underscore.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var dict = [];
+        dict["A"] = dict["I"] = dict["Q"] = dict["J"] = dict["Y"] = 1;
+        dict["B"] = dict["K"] = dict["R"] = 2;
+        dict["C"] = dict["G"] = dict["L"] = dict["S"] = 3;
+        dict["D"] = dict["M"] = dict["T"] = 4;
+        dict["E"] = dict["H"] = dict["N"] = dict["X"] = 5;
+        dict["U"] = dict["V"] = dict["W"] = 6;
+        dict["O"] = dict["Z"] = 7;
+        dict["P"] = dict["F"] = 8;
+
+        $("#input").on("input", function(){
+          var regexp = /[^a-zA-Z]/g;
+          if($(this).val().match(regexp)){
+            $(this).val( $(this).val().replace(regexp,'') );
+          }
+          var arr = $(this).val().toUpperCase().split("");
+          var total = _.reduce(arr, function(memo, num){ return memo + dict[num]; }, 0);
+          $("h1#alpha").html(sumDigits(sumDigits(total)));
+        });
+        $("#year").on("input", function(){
+          var regexp = /[a-zA-Z]/g;
+          if($(this).val().match(regexp)){
+            $(this).val( $(this).val().replace(regexp,'') );
+          }
+          calcSum();
+        });
+        $("select").change(calcSum);
+      });
+      function calcSum(){
+        var total = $("#date").val() + $("#month").val() + $("#year").val()
+        console.log(total);
+        $("h1#num").html(sumDigits(sumDigits(total)));
+      }
+      function sumDigits(number) {
+        var str = number.toString();
+        var sum = 0;
+        for (var i = 0; i < str.length; i++) {
+          sum += parseInt(str.charAt(i), 10);
+        }
+        return sum;
+      }
+    </script>
+    </head>
+    <body>
+      <header>
+			  <h1>Numerology Application</h1>
+		  </header>
+      <section>
+       	<div id="container">
+          <label for='input'>Enter text below</label>
+          <input type='text' id='input' placeholder='only A-Z, and a-z allowed' />
+          <h1 id='alpha'>&nbsp;</h1>
+          <hr/>
+          <label for='date'>Select Date</label>
+          <select id='date'>
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select><br/>
+          <label for='month'>Select Month</label>
+          <select id='month'>
+            <option value="1" selected>January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select><br/>
+          <label for='year'>Enter Year (yyyy)</label>
+          <input type='text' id='year' placeholder='yyyy' value='2015'/><br/>
+          <h1 id='num'>&nbsp;</h1>
+        </div>
+      </section>
+      <footer>
+      </footer>
+    </body>
+</html>

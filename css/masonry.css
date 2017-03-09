@@ -8,6 +8,8 @@
   margin-bottom: 8px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19) !important;
+  text-align: left;
+  font-size: 12px;
 }
 
 
@@ -38,6 +40,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;*/
+  font-size: 12px;
 }
 
 .grid-item p {
@@ -54,6 +57,7 @@
 .grid-item h5 {
   font-weight: normal;
   margin: 6px 0px;
+  font-size: 11px;
 }
 
 .grid-item h5 > a {

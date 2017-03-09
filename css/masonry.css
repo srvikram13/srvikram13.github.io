@@ -9,7 +9,7 @@
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19) !important;
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
@@ -36,11 +36,9 @@
 
 .grid-item h2 {
   font-weight: lighter;
-  /*border-top: 1px solid #ddd;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;*/
-  font-size: 12px;
+  font-size: 22px;
+  LINE-HEIGHT: 1.2em;
+  letter-spacing: -0.75px;
 }
 
 .grid-item p {

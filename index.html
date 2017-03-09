@@ -28,7 +28,8 @@
 
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.10.1.min.js"><\/script>')</script>
   <script src="js/jquery.hashchange.min.js"></script>
   <script src="js/jquery.easytabs.min.js"></script>
@@ -105,7 +106,7 @@
                   <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
                 </li>
                 <li class='tab'>
-                  <a href="#portfolio"><i class="icon-heart"></i><span> Portfolio</span></a>
+                  <a href="#portfolio"><i class="icon-trophy"></i><span> Portfolio</span></a>
                 </li>
                 <li class='tab'>
                   <a href="#contact"><i class="icon-envelope"></i><span> Contact</span></a>
@@ -409,72 +410,96 @@
               <!-- Portfolio Tab Data -->
                 <div id="portfolio">
                     <section class="clearfix">
-                        <!--<div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/1" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/1" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/2" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/2" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/3" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/3" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="break"></div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/4" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/4" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/sports/5" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/sports/5" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="g1">
-                            <div class="image">
-                                <img src="http://lorempixel.com/306/306/business/2" alt="">
-                                <div class="image-overlay">
-                                    <div class="image-link">
-                                        <a href="http://lorempixel.com/606/606/business/2" class="btn">Full View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>-->
+                        
                         <div class="g4" style='text-align:center'>
-                          <h3>
-                            <i class="icon-trophy"></i> Coming Soon!
-                          </h3>
-                          <p>Meanwhile you can check out my <a href="https://github.com/srvikram13">GitHub</a> account and my <a href="http://www.linkedin.com/in/srvikram13">LinkedIn</a> page for more details.</p>
+                          <p>Check out my <a href="https://github.com/srvikram13">GitHub</a> account and my <a href="http://www.linkedin.com/in/srvikram13">LinkedIn</a> page for more details.</p>
+                          <hr/>
+                          <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 232 }'>
+                            <div class="grid-item">
+                              <a href="/ecampus/design-resources/learning-spaces/next-gen-classrooms/index.html"><img src="http://dev.sjsu.edu/ecampus/pics/Student_using_ipad.jpeg" alt="Student using iPad"></a>
+                              <div class="content">
+                                <h2 title="Next Generation Classrooms">Tpoint Solutions Website</h2>
+                                <p>Completely responsive, light-weight, search-engine optimized company website developed during first half of 2016.
+                                </p>
+                                <h5><span class='label'>Employer:</span><br>tPoint Solutions, UK</h5>
+                                <h5><span class='label'>Tech:</span><br>HTML5, CSS3, JavaScript</h5>
+                                <h5><span class='label'>URL:</span><br><a href="http://tpointsolutions.net" target="_blank">http://tpointsolutions.net</a></h5>
+                              </div>
+                            </div>
+                            <div class="grid-item">
+                              <a href="/ecampus/design-resources/learning-spaces/next-gen-classrooms/index.html"><img src="http://dev.sjsu.edu/ecampus/pics/Student_using_ipad.jpeg" alt="Student using iPad"></a>
+                              <div class="content">
+                                <h2 title="Next Generation Classrooms">Performance Monitoring
+                          Dashboard</h2>
+                                <p>A low-latency performance monitoring Dashboard that included various data visualizations to monitor the state of the system. It was completely responsive and highly customizable.
+                                </p>
+                                <h5><span class='label'>Employer:</span><br>tPoint Solutions, UK</h5>
+                                <h5><span class='label'>Tech:</span><br>HTML5, CSS3, jQuery, D3, Bootstrap</h5>
+                                <h5><span class='label'>URL:</span><br><span style="font-style:italic">-NA-</span></h5>
+                              </div>
+                            </div>
+                            <div class="grid-item">
+                              <a href="/ecampus/design-resources/learning-spaces/next-gen-classrooms/index.html"><img src="http://dev.sjsu.edu/ecampus/pics/Student_using_ipad.jpeg" alt="Student using iPad"></a>
+                              <div class="content">
+                                <h2 title="Next Gs">Broad Market Index Web App</h2>
+                                <p>A web app, built primarily using D3, full of custom-built charts and other data visualization components.
+                                </p>
+                                <h5><span class='label'>Employer:</span><br>ZyFin Research Private Ltd</h5>
+                                <h5><span class='label'>Tech:</span><br>HTML5, CSS3, jQuery, D3, Bootstrap, underscoreJS</h5>
+                                <h5><span class='label'>URL:</span><br><a href="http://research.zyfin.com/apps/BMI/bmi" target="_blank">research.zyfin.com/apps/BMI/bmi</a></h5>
+                              </div>
+                            </div>
+                            <div class="grid-item">
+                              <a href="/ecampus/design-resources/learning-spaces/next-gen-classrooms/index.html"><img src="http://dev.sjsu.edu/ecampus/pics/Student_using_ipad.jpeg" alt="Student using iPad"></a>
+                              <div class="content">
+                                <h2 title="ZyFin Reseach Website">ZyFin Reseach Website</h2>
+                                      <p>Zyfin Research responsive website developed during the early stages of the company around mid-2013.
+                                        </p>
+                                        <h5><span class='label'>Employer:</span><br>ZyFin Research Private Ltd</h5>
+                                        <h5><span class='label'>Tech:</span><br>HTML5, CSS3, jQuery, D3, Bootstrap,
+                                  underscoreJS</h5>
+                                        <h5><span class='label'>URL:</span><br><a href="http://research.zyfin.com" target="_blank">research.zyfin.com</a></h5>
+                                      </div>
+                                    </div>
+                                    <div class="grid-item">
+                                      <a href="/ecampus/design-resources/learning-spaces/next-gen-classrooms/index.html"><img src="http://dev.sjsu.edu/ecampus/pics/Student_using_ipad.jpeg" alt="Student using iPad"></a>
+                                      <div class="content">
+                                        <h2 title="AngelEye (Trading Application)">AngelEye (Trading Application)</h2>
+                                        <p>The trading module of the AngelEye application was developed completely in Flash ActionScript 3.0 (while the portfolio management module was developed in HTML). It provides support for 2 different trading platforms used by the company, thereby enabling
+                                          the company to cease support for the two legacy applications.
+                                        </p>
+                                        <h5><span class='label'>Employer:</span><br>ZyFin Research Private Ltd</h5>
+                                        <h5><span class='label'>Tech:</span><br>Flash ActionScript 3.0, JavaScript</h5>
+                                        <h5><span class='label'>URL:</span><br><a href="http://www.youtube.com/watch?v=AubNUsEQS-A" target="_blank">youtu.be/watch?v=AubNUsEQS-A</a></h5>
+                                      </div>
+                                    </div>
+                                    <div class="grid-item">
+                                      <a href="/ecampus/design-resources/learning-spaces/next-gen-classrooms/index.html"><img src="http://dev.sjsu.edu/ecampus/pics/Student_using_ipad.jpeg" alt="Student using iPad"></a>
+                                      <div class="content">
+                                        <h2 title="AngelEye (Trading Application)">Timeline</h2>
+                                        <p>A data visualization tool, built way ahead of its time (long before facebook, twitter and others started using a timeline view). It is an educational tool to visually represent activity/events with option to create custom timelines. It also sports
+                                          a WYSIWYG print preview that was a novel feature for a web based application back in 2007-08.
+                                        </p>
+                                        <h5><span class='label'>Employer:</span><br>Zeus Learning</h5>
+                                        <h5><span class='label'>Tech:</span><br>Flash ActionScript 3.0, JavaScript</h5>
+                                        <h5><span class='label'>URL:</span><br><a href="http://testfunda.com/Content/Content/examprep/mba-resource/one-lakh-user/timeline/demo-indian-space-odyssey.htm?assetid=5bf66b71-9712-4c65-9733-1871e7b89ff3" target="_blank">Indian Space Odyssey</a><br><a href="http://testfunda.com/Content/examprep/mba-resource/one-lakh-user/timeline/demo-indous-nuclear-deal.htm?assetid=b9b1e728-42f8-400f-8b44-c946210d573b" target="_blank">Indo-US Nuclear Deal</a></h5>
+                                      </div>
+                                    </div>
+                                    <div class="grid-item">
+                                      <a href="/ecampus/design-resources/learning-spaces/next-gen-classrooms/index.html"><img src="http://dev.sjsu.edu/ecampus/pics/Student_using_ipad.jpeg" alt="Student using iPad"></a>
+                                      <div class="content">
+                                        <h2 title="Fit n’ Fun">Fit n’ Fun</h2>
+                                        <p>A fun app that uses device sensors to encourages users to engage in physical activity, get fit, and have fun while doing so.
+                                        </p>
+                                        <h5><span class='label'>Employer:</span><br><span style='font-style:italic'>Academic Project</span></h5>
+                                        <h5><span class='label'>Tech:</span><br>Android</h5>
+                                        <h5><span class='label'>URL:</span><br><a href="http://www.youtube.com/watch?v=Ldt10iN7B4c" target="_blank">youtu.be/watch?v=Ldt10iN7B4c</a></h5>
+                                        <h5><span class='label'>Slidedeck:</span><br><a href="http://bit.ly/FitnFun-SlideDeck" target="_blank">bit.ly/FitnFun-SlideDeck</a></h5>
+                                        <h5><span class='label'>URL:</span><br><a href="https://github.com/srvikram13/FitnFun" target="_blank">github.com/srvikram13/FitnFun</a></h5>
+                                      </div>
+                                    </div>
+                                  </div>
+
                         </div>
                     </section>
                 </div>

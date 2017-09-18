@@ -1,11 +1,11 @@
 .grid-item {
   background-color: powderblue;
   color: #333;
-  width: 220px;
+  width: 310px;
   vertical-align: top;
   display: inline-block;
-  margin-right: 4px;
-  margin-bottom: 8px;
+  margin-right: 12px;
+  margin-bottom: 12px;
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19) !important;
   text-align: left;
@@ -41,7 +41,6 @@
 }
 
 .grid-item p {
-  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   wordwrap: true;
   color: #555;

@@ -300,6 +300,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   color: darkslategray;
   text-shadow: 1px 1px 2px #999;
   font-weight: 800;
+  font-family: 'Cambria', sans-serif;
 }
 .info h2 {
   color: #777;

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#303F9F">
+	<link rel="apple-touch-icon" sizes="57x57" href="imgs/icons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="imgs/icons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="imgs/icons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="imgs/icons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="imgs/icons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="imgs/icons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="imgs/icons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="imgs/icons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="imgs/icons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="imgs/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="imgs/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="imgs/icons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="imgs/icons/favicon-16x16.png">
+	<link rel="manifest" href="imgs/icons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="imgs/icons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/semantic.min.css">
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://semantic-ui.com/dist/semantic.min.js"></script>
+	<title>Clean Up Hero | Request Pickup</title>
+</head>
+<body>
+	<div class="ui fixed inverted main menu">
+	  <div class="ui container">
+	    <a class="launch icon item">
+	      <i class="content icon"></i>
+	    </a>
+	    <div class="item">Request Pickup</div>
+	  </div>
+	</div>
+	<section>
+		<form id='request-form' onsubmit="return false">
+			<div class="ui form">
+			  <div class="field">
+			    	<label for='pickup-location'>Pickup Location</label>
+			  		<div class="ui left icon input">
+			    		<input name="pickup-location" id="pickup-location" type="text">
+			    		<i class="map pin icon"></i>
+			    	</div>
+			  </div>
+			  <div class=" field">
+		    	<label for='pickup-time'>Set Pickup Time</label>
+			  	<div class="ui left icon input">
+			    	<input name="pickup-time" id="pickup-time" type="text" readonly="" placeholder="Coming Soon!">
+				    <i class="time icon"></i>
+				</div>
+			  </div>
+			  <div class="ui segment">
+			      <div class="two fields">
+			          <div class="field">
+			            <label>Quantity</label>
+			  			<div class="ui left icon input">
+				            <input placeholder="Disposals Units" type="number">
+				            <i class="trash outline icon"></i>
+				        </div>
+			          </div>
+			          <div class="disabled field">
+			  			<div class="ui left icon input">
+				            <input placeholder="Recyclable Units" type="text" readonly="" placeholder="Coming Soon!">
+				            <i class="recycle icon"></i>
+				        </div>
+			          </div>
+			    </div>
+			</div>
+			<div class="fluid ui buttons">
+			  <button class="ui button" type="button">Cancel</button>
+			  <div class="or"></div>
+			  <button class="ui positive button" type="submit">Request Pickup</button>
+			</div>
+		</form>
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>

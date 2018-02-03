@@ -1,9 +1,12 @@
 body {
-	padding: 20px;
+	/*padding: 20px;*/
 	margin: 0px;
 	box-sizing: border-box;
 	font-size: 16px;
 }
 section {
 	margin-top: 40px;
+}
+section.ui.container {
+	margin-top: 60px;
 }

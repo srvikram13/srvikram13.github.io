@@ -21,17 +21,33 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="imgs/icons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/semantic.min.css">
 	<script
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
-	<script src="semantic/dist/semantic.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://semantic-ui.com/dist/semantic.min.js"></script>
 	<title>Clean Up Hero | Welcome</title>
+	<style type="text/css">
+		img {
+			margin-top: 100px;
+		}
+	</style>
 </head>
 <body>
-	<h1>Hello World</h1>
-	<script src="js/main.js"></script>
+		<img class="ui centered middle image"  src="imgs/icons/android-icon-192x192.png">
+		<h1 class="ui center aligned header">Cleanup Hero</h1>
+		<h4 class="ui center aligned header">On-demand trash collection done right</h4>
+	<script type="text/javascript">
+		setTimeout(function(){
+			// location.href = "request.html";
+			$('img').transition('fade up');
+			setTimeout(function(){
+				location.href = "request.html";
+			}, 1600);
+		}, 600);
+		$('img').transition('fade up');
+	</script>
 </body>
 </html>

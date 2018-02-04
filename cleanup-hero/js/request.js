@@ -70,15 +70,21 @@ $("form").submit(function(e){
 		.then((resp) => resp.json())
 		.then((data) => {
 			console.log('bookJob response', data)
+			if(data && data.id) {
+				showMessage("Pickup Requested", "Looking for nearby collector", "positive")
+			}
 
 		})
 		.catch(err=>console.log(err));
 
 	return false;
 })
-function showMessage(heading, desc) {
+function showMessage(heading, desc, state) {
 	$(".ui.buttons").hide();
-	$(".ui.message").show().removeClass("hidden");
+	$(".ui.message").show().attr("class", "ui icon message");
+	if(state) {
+		$(".ui.message").addClass(state);
+	}
 	if(heading) $(".ui.message").find('.header').html(heading);
 	if(desc) $(".ui.message").find('p').html(desc);
 }

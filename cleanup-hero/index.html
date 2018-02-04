@@ -35,23 +35,39 @@
 		img {
 			margin-top: 100px;
 		}
+		.ui.segment {
+			display: none;
+			margin-top: 120px;
+		}
 	</style>
 </head>
 <body>
 	<img class="ui centered middle image hidden"  src="imgs/icons/android-icon-192x192.png">
+	<div class="ui segment hidden">
+		<button class="fluid ui green massive button" onclick="location.href='request.html'">Request Pickup</button>
+		<div class="ui horizontal divider">
+		    Or
+		  </div>
+		<button class="fluid ui blue massive button" onclick="location.href='routing.html'">Collect Pickup</button>
+	</div>
 	<h1 class="ui center aligned header">Cleanup Hero</h1>
 	<h4 class="ui center aligned header">On-demand trash collection done right</h4>
-	<div class="ui segment">
-		<button class="fluid ui green button">Request Pickup</button>
-		<button class="fluid ui blue button">Collect Pickup</button>
-	</div>
 	<script type="text/javascript">
 		setTimeout(function(){
 			// location.href = "request.html";
-			$('img').transition('fade up');
-			setTimeout(function(){
+			$('img').transition({
+			    animation  : 'fade up',
+			    duration   : '1s',
+			    onComplete : function() {
+			      $("img").hide();
+			      $('.ui.segment').transition('fade up');
+			    }
+			  })
+			;
+			/*setTimeout(function(){
 				//location.href = "request.html";
-			}, 2000);
+				$('.ui.segment').show('fast');
+			}, 2000);*/
 		}, 600);
 		$('img').transition('fade up');
 	</script>

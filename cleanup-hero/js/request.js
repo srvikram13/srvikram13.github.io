@@ -20,8 +20,8 @@ const APP_NAME = 'test-api-gateway';
 
 const JOB_CREATED = 0;
 const JOB_IN_PROGRESS = 1;
-const DONE = 2;
-const CANCELLED = 3;
+const JOB_DONE = 2;
+const JOB_CANCELLED = 3;
 
 $('.ui.search')
   .search({
@@ -72,6 +72,8 @@ $("form").submit(function(e){
 			console.log('bookJob response', data)
 			if(data && data.id) {
 				showMessage("Pickup Requested", "Looking for nearby collector", "positive")
+				checkJobStatus(data.id);
+				job = data;
 			}
 
 		})
@@ -91,4 +93,39 @@ function showMessage(heading, desc, state) {
 function hideMessage(){
 	$(".ui.buttons").show();
 	$(".ui.message").hide();
+}
+let pollingId;
+let job;
+function checkJobStatus(jobId) {
+	clearInterval(pollingId);
+	//	https://{{BASE_API_URL}}/{{STAGE}}/{{APP_NAME}}?action=checkJobStatus&id=6eaf351a-7462-402e-81a9-92efe0a197c2
+	pollingId = setInterval(function (){
+		fetch(`https://${BASE_API_URL}/${STAGE}/${APP_NAME}?action=checkJobStatus&id=${job.id}`)
+		.then((resp) => resp.json())
+		.then((data) => {
+			//console.log('checkJob response', data)
+			if(data && data.id) {
+				job = data;
+				switch(job.state){
+					case JOB_CREATED:
+						return;
+					case JOB_IN_PROGRESS:
+						$("#btn-cancel").hide();
+						showMessage("Pickup Assigned", "The Collector will be at your location shortly.");
+						break;
+					case JOB_DONE:
+						showMessage("Pickup Complete", "The Collector has completed the pickup.", "positive");
+						setTimeout(window.location.reload.bind(window.location), 3000);
+						break;
+					case JOB_CANCELLED:
+						location.reload();
+						return;
+				}
+				//checkJobStatus(data.id);
+			}
+
+		})
+		.catch(err=>console.log(err));
+	}, 10000);
+	
 }

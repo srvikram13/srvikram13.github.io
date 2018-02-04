@@ -24,6 +24,9 @@
 	<meta name="msapplication-TileImage" content="imgs/icons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/semantic.min.css">
+	<link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-js/latest/examples/sdk/map.css' />
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-js/latest/examples/elements.css'>
+    <script src='sdk/tomtom.min.js'></script>
 	<script
 	  src="https://code.jquery.com/jquery-3.1.1.min.js"
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -32,14 +35,11 @@
 	<script src="https://semantic-ui.com/dist/semantic.min.js"></script>
 	<title>Cleanup Hero</title>
 	<style type="text/css">
-		section div.ui.statistics {
-			width: 100%;
-			margin: 0px auto;
+		.ui.fluid.image {
+			margin-top: 65px;
 		}
-		section .statistic {
-			display: inline-block;
-			margin: 10px auto;
-			text-align: center;
+		section {
+			margin: inherit;
 		}
 	</style>
 </head>
@@ -61,43 +61,36 @@
 		    <a class="launch icon item">
 		      <i class="content icon"></i>
 		    </a>
-		    <div class="item">Track Pickup</div>
+		    <div class="item">Pickup Information</div>
 		  </div>
 		</div>
-		<div class="ui fluid image">
+		<div class="ui fluid image" id='map'>
 				<img src="imgs/placeholder-map.jpg">
 			</div>
 		<section>
-			
-			<div class="ui statistics">
-			  <div class="statistic">
-			    <div class="text value">
-			      on the <br>way
-			    </div>
-			    <div class="label">
-			      Status
+			<div class="ui fluid card">
+			  <div class="content">
+			    <div class="header">Millenium Tower</div>
+			  </div>
+			  <div class="content">
+			    <h4 class="ui sub header">2 Disposable units</h4>
+			    <div class="ui small feed">
+			      <div class="event">
+			        <div class="content">
+			          <div class="summary">
+			             <a>ABC location</a>
+			          </div>
+			        </div>
+			      </div>
 			    </div>
 			  </div>
-			  <div class="statistic">
-			    <div class="value">
-			      05:00
-			    </div>
-			    <div class="label">
-			      Est. Time
-			    </div>
-			  </div>
-			  <div class="ui statistic">
-			    <div class="value">
-			    	<img src="imgs/square-image.png" class="ui circular inline image">
-			      John Doe
-			    </div>
-			    <div class="label">
-			      Driver Info
-			    </div>
+			  <div class="extra content">
+			    <button class="ui fluid submit blue button">Pickup Complete</button>
 			  </div>
 			</div>
 		</section>
 	</div>
 	<script src="js/main.js"></script>
+	<script src="js/routing.js"></script>
 </body>
 </html>

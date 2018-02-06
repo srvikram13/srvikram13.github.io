@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,7 +16,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="imgs/icons/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="imgs/icons/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="imgs/icons/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="imgs/icons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="imgs/icons/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="imgs/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="imgs/icons/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="imgs/icons/favicon-16x16.png">
@@ -23,74 +24,40 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="imgs/icons/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
-	<link rel="stylesheet" type="text/css" href="https://semantic-ui.com/dist/semantic.min.css">
-	<link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-js/latest/examples/sdk/map.css' />
-    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-js/latest/examples/elements.css'>
-    <script src='sdk/tomtom.min.js'></script>
-	<script
-	  src="https://code.jquery.com/jquery-3.1.1.min.js"
-	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	  crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	 crossorigin="anonymous"></script>
+
+	<!-- TOMTOM -->
+	<link rel='stylesheet' type='text/css' href='sdk/map.css' />
+	<script src="sdk/tomtom.min.js"></script>
+	<!-- TOMTOM -->
+
 	<link rel="stylesheet" href="css/main.css">
-	<script src="https://semantic-ui.com/dist/semantic.min.js"></script>
+
 	<title>Cleanup Hero</title>
+
 	<style type="text/css">
-		.ui.fluid.image {
-			margin-top: 65px;
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
 		}
-		section {
-			margin: inherit;
+
+		#map {
+			width: 100%;
+			height: 100%;
 		}
 	</style>
 </head>
+
 <body>
-	<div class="ui vertical inverted sidebar menu left" id="toc" style="">
-		<div class="item">
-			<a class="ui logo icon image" href="/">
-	    		<img src="imgs/icons/android-icon-36x36.png">
-	  		</a>
-			<a href="javascript:location.href='index.html';"><b>Cleanup Hero</b></a>
-		</div>
-		<a class="item" href="javascript:location.href='request.html';"><b>Request Pickup</b></a>
-		<a class="item" href="javascript:location.href='track.html';"><b>Track Pickup</b></a>
-		<a class="item" href="javascript:location.href='history.html';"><b>Pickup History</b></a>
-	</div>
-	<div class="pusher">
-		<div class="ui fixed inverted main menu">
-		  <div class="ui container">
-		    <a class="launch icon item">
-		      <i class="content icon"></i>
-		    </a>
-		    <div class="item">Pickup Information</div>
-		  </div>
-		</div>
-		<div class="ui fluid image" id='map'>
-				<img src="imgs/placeholder-map.jpg">
-			</div>
-		<section>
-			<div class="ui fluid card">
-			  <div class="content">
-			    <div class="header">Millenium Tower</div>
-			  </div>
-			  <div class="content">
-			    <h4 class="ui sub header">2 Disposable units</h4>
-			    <div class="ui small feed">
-			      <div class="event">
-			        <div class="content">
-			          <div class="summary">
-			             <a>ABC location</a>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="extra content">
-			    <button class="ui fluid submit blue button">Pickup Complete</button>
-			  </div>
-			</div>
-		</section>
+	<div id='map' class="ui fluid image leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom">
 	</div>
 	<script src="js/main.js"></script>
 	<script src="js/routing.js"></script>
 </body>
+
 </html>

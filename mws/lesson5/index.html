@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brighton Times</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header__inner">
+        <img class="header__logo" src="images/city.png" alt="iconic view of a cityscape">
+        <h1 class="header__title">
+          The Brighton Times
+        </h1>
+        <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">News</a></li>
+        <li class="nav__item"><a href="#">Events</a></li>
+        <li class="nav__item"><a href="#">Culture</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="content">
+        <section class="hero">
+          <article class="description">
+            <h2>Absolutely astonishing breaking news!</h2>
+            <p class="block-with-text">Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko. Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</p>
+          </article>
+        </section>
+
+        <section class="news top-news">
+          <h2 class="news__title">Top news <a href="#" class="news__more">+ more</a></h2>
+          <ul>
+            <li class="top-news__item">
+              <a href="#">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#">Squid lomo Kickstarter art lomo Kickstarter art party cronut scenester.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#">Organic raw denim lomo Kickstarter art Vice keffiyeh four loko.</a>
+            </li>
+            <li class="top-news__item">
+              <a href="#">Organic raw denim Vice keffiyeh lomo Kickstarter art lomo Kickstarter art four loko.</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="scores">
+          <table class="scores__table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th class="scores__location" colspan="2">Team</th>
+                <th>Won</th>
+                <th>Lost</th>
+                <th>Pct</th>
+                <th>Home</th>
+                <th>Away</th>
+                <th>Last 10</th>
+                <th>Streak</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="scores__location"><img src='https://ssl.gstatic.com/onebox/media/sports/logos/zhO6MIB1UzZmtXLHkJQBmg_48x48.png' alt='rockets icon'/></td>
+                <td>Rockets</td>
+                <td>65</td>
+                <td class="winner">17</td>
+                <td class="winner">.793</td>
+                <td>34-7</td>
+                <td>31-10</td>
+                <td>7-3</td>
+                <td>L1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="scores__location"><img src='https://ssl.gstatic.com/onebox/media/sports/logos/XD2v321N_-vk7paF53TkAg_48x48.png' alt='warriors icon'/></td>
+                <td>Warriors</td>
+                <td>58</td>
+                <td class="winner">24</td>
+                <td class="winner">.707</td>
+                <td>29-12</td>
+                <td>29-12</td>
+                <td>4-6</td>
+                <td>L1</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="scores__location"><img src='https://ssl.gstatic.com/onebox/media/sports/logos/_bgagBCd6ieOIt3INWRN_w_48x48.png' alt='trail blazers icon'/></td>
+                <td>Trail Blazers</td>
+                <td>49</td>
+                <td class="winner">33</td>
+                <td class="winner">.598</td>
+                <td>28-13</td>
+                <td>21-20</td>
+                <td>5-5</td>
+                <td>W1</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="scores__location"><img src='https://ssl.gstatic.com/onebox/media/sports/logos/b4bJ9zKFBDykdSIGUrbWdw_48x48.png' alt='thunders icon'/></td>
+                <td>Thunders</td>
+                <td>48</td>
+                <td class="winner">34</td>
+                <td class="winner">.585</td>
+                <td>27-14</td>
+                <td>21-20</td>
+                <td>5-5</td>
+                <td>W3</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td class="scores__location"><img src='https://ssl.gstatic.com/onebox/media/sports/logos/SP_dsmXEKFVZH5N1DQpZ4A_48x48.png' alt='jazz icon'/></td>
+                <td>Jazz</td>
+                <td>48</td>
+                <td class="winner">34</td>
+                <td class="winner">.585</td>
+                <td>28-13</td>
+                <td>20-21</td>
+                <td>7-3</td>
+                <td>L1</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="weather">
+          <span class="weather__location">Brighton, UK</span>
+          <span class="weather__desc">Sunny</span>
+          <span class="weather__today">
+          <img class="weather__today__image" src="images/weather.png" alt="icon of a partially cloudy day"><span class="weather__today__temp">13</span><span class="weather__today__deg">&deg;C</span>
+          </span>
+          <ul class="weather__next">
+            <li class="weather__next__item">
+              <span>Mon</span>
+              <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Tues</span>
+              <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Wed</span>
+              <img class="weather__next__image" src="images/cloudy.png" alt="icon of a cloudy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Thu</span>
+              <img class="weather__next__image" src="images/rain.png" alt="icon of a rainy day">
+              <span>13 &deg;C</span>
+            </li><li class="weather__next__item">
+              <span>Fri</span>
+              <img class="weather__next__image" src="images/sunny.png" alt="icon of a sunny day">
+              <span>13 &deg;C</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news recent-news">
+          <h2 class="news__title">Latest news <a href="#" class="news__more">+ more</a></h2>
+          <ul>
+            <li class="snippet">
+              <img class="snippet__thumbnail" srcset="images/dogx200.jpg 100w, images/dogx200.jpg 200w,
+             images/dogx200.jpg 400w, images/dogx400.jpg 800w,
+             images/dogx400.jpg 1000w, images/dogx400.jpg 1400w,
+             images/dog.jpg 800w"  alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#">Gastropub distillery Marfa farm-to-table</a></h3>
+              <p class="block-with-text">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" srcset="images/dogx200.jpg 100w, images/dogx200.jpg 200w,
+             images/dogx200.jpg 400w, images/dogx400.jpg 800w,
+             images/dogx400.jpg 1000w, images/dogx400.jpg 1400w,
+             images/dog.jpg 800w"  alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#">Organic raw keffiyeh four loko.</a></h3>
+              <p class="block-with-text">Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice loko.
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" srcset="images/dogx200.jpg 100w, images/dogx200.jpg 200w,
+             images/dogx200.jpg 400w, images/dogx400.jpg 800w,
+             images/dogx400.jpg 1000w, images/dogx400.jpg 1400w,
+             images/dog.jpg 800w" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#">Kickstarter art party cronut scenester.</a></h3>
+              <p class="block-with-text">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko.
+              </p>
+            </li>
+            <li class="snippet">
+              <img class="snippet__thumbnail" srcset="images/dogx200.jpg 100w, images/dogx200.jpg 200w,
+             images/dogx200.jpg 400w, images/dogx400.jpg 800w,
+             images/dogx400.jpg 1000w, images/dogx400.jpg 1400w,
+             images/dog.jpg 800w" alt="picture of a girl with a large, stuffed dog toy">
+              <h3 class="snippet__title"><a href="#">Squid lomo Kickstarter art party cronut </a></h3>
+              <p class="block-with-text">Gastropub distillery Marfa farm-to-table, Etsy Truffaut fingerstache.
+              Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko. Squid lomo Kickstarter art party cronut scenester. Organic raw denim Vice keffiyeh four loko.Vice keffiyeh four loko.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <footer>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Follow us on Twitter</a></li>
+          <li><a href="#">RSS</a></li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+  </body>
+</html>
